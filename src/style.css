@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(149, 149, 173, 0.5),
+      rgba(97, 97, 4, 0.5)
+    ),
+    url(./images/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #9aa0a6;
+}
+
+.title {
+  display: block;
+  margin: 50px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.title {
+  color: #ffffff;
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.search::before,
+.search-clear {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-clear {
+  right: 15px;
+  background-image: url(./images/clear.svg);
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-clear:hover,
+.search-clear:focus {
+  box-shadow: -2px 2px 2px rgba(32, 33, 36, 0.3);
+}
+
+.search-input {
+  width: 500px;
+  height: 50px;
+  padding: 10px 50px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  border: 2px solid #9aa0a6;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: inherit;
+  cursor: text;
+  outline: none;
+}
+
+.search-input:hover,
+.search-input:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.simple-list {
+  display: inline-block;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.countryName {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: #000000;
+}
+
+.countryInfo {
+  display: flex;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.countryListItems {
+  min-width: 400px;
+  max-width: 500px;
+  margin-right: 20px;
+
+  font-size: 25px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.countryItem > span {
+  font-weight: 700;
+}
+
+.countryFlag {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
